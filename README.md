@@ -1,1 +1,1 @@
-# Demo: https://github.trinhngocminh.com/
+# Demo: https://cdn.trinhngocminh.com/
