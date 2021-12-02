@@ -500,8 +500,8 @@
                                         <img src="https://play-lh.googleusercontent.com/yIaqd7xoflM55aG_FUEnHaAPgZuvW9euywhzB4yazVLzR12WdLDwh_2y_E_2vopU_gif" height="55px">
                                         <div>&nbsp;
                                             <h4 class="title title--h4">Thẻ Siêu Rẻ</h4>
-                                            <p><b>Trịnh Ngọc Minh</b><br><b>033.4955.115</b></p>
-                                            <button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="geturl('9777702864')">COPY</button>
+                                            <p><b>Trịnh Ngọc Minh</b><br><b><input id="myinput">033.4955.115</input></b></p>
+                                            <button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="tsr()">COPY</button>
                                         </div>
                                     </div>
                                 </div>
@@ -513,7 +513,7 @@
                                         <div>&nbsp;
                                             <h4 class="title title--h4">MB Bank</h4>
                                             <p><b>TRAN DUC LUONG</b><br><b>033.4955.115</b></p>
-                                            <button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="geturl('0334955115')">COPY</button>
+                                            <button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="atm()">COPY</button>
                                         </div>
                                     </div>
                                 </div>
@@ -525,7 +525,7 @@
                                         <div>&nbsp;
                                             <h4 class="title title--h4">Ví Momo</h4>
                                             <p><b>Trịnh Ngọc Minh</b><br><b>033.4955.115</b></p>
-                                            <button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="geturl('0334955115')">COPY</button>
+                                            <button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="momo()">COPY</button>
                                         </div>
                                     </div>
                                 </div>
@@ -535,7 +535,7 @@
                                         <div>&nbsp;
                                             <h4 class="title title--h4">Ví ZaloPay</h4>
                                             <p><b>Trịnh Ngọc Minh<</b><br><b>033.4955.115</b></p>
-                                            <button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="geturl('0334955115')">COPY</button>
+                                            <button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="zalo()">COPY</button>
                                         </div>
                                     </div>
                                 </div>
@@ -574,6 +574,12 @@
 
     <div class="back-to-top"></div>
     <!-- JavaScripts -->
+    <script>function tsr() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("copy");
+                             }   
+    </script>
     <script data-cfasync="false" src="email.min.js"></script>
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
