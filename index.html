@@ -552,17 +552,6 @@
 
                     </div>
 
-                    <script>
-                        function geturl(giatri) {
-                            var $temp = $("<input>");
-                            $("body").append($temp);
-                            $temp.val(giatri).select();
-                            document.execCommand("copy");
-                            $temp.remove();
-                            alert("Copy Thành Công");
-                        }
-                    </script>
-
                     <!-- Footer -->
                     <footer class="footer">© 2021 Vận Hành Bởi <a href="https://www.facebook.com/hacked/">Ngoc Minh</a></footer>
 
@@ -585,7 +574,16 @@
 
     <div class="back-to-top"></div>
 
-
+                    <script>
+                        function geturl(giatri) {
+                            var $temp = $("<input>");
+                            $("body").append($temp);
+                            $temp.val(giatri).select();
+                            document.execCommand("copy");
+                            $temp.remove();
+                            alert("Copy Thành Công");
+                        }
+                    </script>
 
     <!-- JavaScripts -->
     <script data-cfasync="false" src="email.min.js"></script>
