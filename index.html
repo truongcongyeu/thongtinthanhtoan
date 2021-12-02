@@ -525,7 +525,7 @@
                                         <div>&nbsp;
                                             <h4 class="title title--h4">Ví Momo</h4>
                                             <p><b>Trịnh Ngọc Minh</b><br><b>033.4955.115</b></p>
-                                            <button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="momo()">COPY</button>
+                                            <button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="copy('0334955115')">COPY</button>
                                         </div>
                                     </div>
                                 </div>
@@ -534,8 +534,7 @@
                                         <img src="./img/pay.png" height="55px">
                                         <div>&nbsp;
                                             <h4 class="title title--h4">Ví ZaloPay</h4>
-                                            <p><b>Trịnh Ngọc Minh<</b><br><b>033.4955.115</b></p>
-                                            <button type="button" style="height:30px;width:100px" class="btn btn-primary" onclick="zalo()">COPY</button>
+                                            <p><b>Trịnh Ngọc Minh<</b><br><b>033.4955.115</b></p>onclick="copy('0334955115')">COPY</button>
                                         </div>
                                     </div>
                                 </div>
@@ -574,12 +573,15 @@
 
     <div class="back-to-top"></div>
     <!-- JavaScripts -->
-    <script>function tsr() {
-  var copyText = "0334955115";
-  copyText.select();
+<script>
+function copy(text) {
+  document.body.insertAdjacentHTML("beforeend","<div id=\"copy\" contenteditable>"+text+"</div>")
+  document.getElementById("copy").focus();
+  document.execCommand("selectAll");
   document.execCommand("copy");
-                             }   
-    </script>
+  document.getElementById("copy").remove();
+}
+</script>
     <script data-cfasync="false" src="email.min.js"></script>
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
