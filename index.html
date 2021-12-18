@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trịnh Ngọc Minh - Trang Thông Tin Cá Nhân</title>    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ngocminhvn/all/snow.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.min.css">
         <div class="snowflake">❅</div>
         <div class="snowflake">❆</div>
         <div class="snowflake">☢</div>
@@ -452,14 +453,18 @@ function copy(text) {
   document.execCommand("selectAll");
   document.execCommand("copy");
   document.getElementById("copy").remove();
-  swal("Tốt!", "Sao chép thành công!", "success");
+  Swal.fire(
+  'Good!',
+  'Đã sao chép thành công!',
+  'success'
+)
 }
 </script>
     <script data-cfasync="false" src="email.min.js"></script>
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/common.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.min.js"></script>
     <script src="assets/demo/plugins-demo.js"></script>
 </body>
 
