@@ -452,13 +452,14 @@ function copy(text) {
   document.execCommand("selectAll");
   document.execCommand("copy");
   document.getElementById("copy").remove();
+  swal("Good job!", "You clicked the button!", "success");
 }
 </script>
     <script data-cfasync="false" src="email.min.js"></script>
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/common.js"></script>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="assets/demo/plugins-demo.js"></script>
 </body>
 
