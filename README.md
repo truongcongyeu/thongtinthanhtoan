@@ -1,1 +1,1 @@
-# Demo: https://cdn.trinhngocminh.com/
+<a style='text-align: center;'>Thông tin thanh toán</a>
