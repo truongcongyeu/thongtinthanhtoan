@@ -217,11 +217,24 @@ function copy(text) {
   document.execCommand("selectAll");
   document.execCommand("copy");
   document.getElementById("copy").remove();
-  Swal.fire(
-  'Good!',
-  'Đã sao chép thành công!',
-  'success'
-)
+Command: toastr["success"]("Success", "Sao chép thành công !")
+toastr.options = {
+  "closeButton": false,
+  "debug": false,
+  "newestOnTop": false,
+  "progressBar": false,
+  "positionClass": "toast-top-right",
+  "preventDuplicates": false,
+  "onclick": null,
+  "showDuration": "300",
+  "hideDuration": "1000",
+  "timeOut": "5000",
+  "extendedTimeOut": "1000",
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut"
+}
 }
 </script>
     <script data-cfasync="false" src="email.min.js"></script>
