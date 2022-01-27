@@ -24,20 +24,10 @@
     <meta content='https://i.imgur.com/y23KVsg.jpg' property='og:image' />
     <meta content='website' property='og:type' />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ngocminhvn/all/snow.css" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"/>
     <link rel="stylesheet" href="assets/mod.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="assets/mod.js"></script>
-<style>
-i.fas.fa-check {
-    background: #1266f1;
-    color: #fff;
-    padding: 4px;
-    border-radius: 100%;
-    font-size: 8px;
-    vertical-align: middle;
-}
-</style>
         <!-- Meta Data -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -54,6 +44,15 @@ i.fas.fa-check {
     <style type="text/css">
         @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
         .Ubuntu {font-family: 'Nunito Sans', sans-serif !important;}
+        .toast-success{background-color:#51A351 !important;}
+    i.fas.fa-check {
+    background: #1266f1;
+    color: #fff;
+    padding: 4px;
+    border-radius: 100%;
+    font-size: 8px;
+    vertical-align: middle;
+}
     </style>
 
 </head>
@@ -91,7 +90,7 @@ i.fas.fa-check {
             <header class="header box">
                 <div class="header__left">
                     <div class="header__photo">
-                        <img class="header__photo-img" src="//ngocminh.design/all/svg/avatar.svg" alt="minhdeptrai">
+                        <img class="header__photo-img" src="//ngocminh.design/all/svg/avatar.svg" alt="Admin Minh !">
                     </div>
                     <div class="header__base-info">
                         <h2 class="title titl--h1 Ubuntu"><b>Trịnh Ngọc Minh<img src="//ngocminh.design/all/svg/tich-xanh.svg" alt="Đã Xác Minh" style="height: 24px;"></b></h2>
@@ -178,7 +177,7 @@ i.fas.fa-check {
 
                             </div>
                             <center>
-                                <a style="color:#fff;" href="/light.html">theme Light ở đây</a>
+                                <a style="color:dark;" href="/index.html">theme Light ở đây</a>
 
                             </center>
                         </div>
@@ -215,31 +214,24 @@ function copy(text) {
   document.execCommand("selectAll");
   document.execCommand("copy");
   document.getElementById("copy").remove();
-Command: toastr["success"]("Success", "Sao chép thành công !")
-toastr.options = {
-  "closeButton": true,
-  "debug": false,
-  "newestOnTop": true,
-  "progressBar": true,
-  "positionClass": "toast-top-right",
-  "preventDuplicates": false,
-  "onclick": null,
-  "showDuration": "300",
-  "hideDuration": "1000",
-  "timeOut": "5000",
-  "extendedTimeOut": "1000",
-  "showEasing": "swing",
-  "hideEasing": "linear",
-  "showMethod": "fadeIn",
-  "hideMethod": "fadeOut"
-}
+toastr.success('Sao chép thành công!', 'Success')
 }
 </script>
+<script>
+            //<![CDATA[
+                var url = window.location.href
+                var uri = window.location.toString()
+                var fb1 = url.substring(0, url.indexOf('?fbclid'))
+                var fb2 = url.substring(0, url.indexOf('&fbclid'))
+                if ((uri.length - fb1.length) > 0) window.history.replaceState({}, document.title, fb1)
+                if ((uri.length - fb2.length) > 0) window.history.replaceState({}, document.title, fb2)
+            //]]>
+        </script>
     <script data-cfasync="false" src="email.min.js"></script>
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/common.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="assets/demo/plugins-demo.js"></script>
 </body>
 
