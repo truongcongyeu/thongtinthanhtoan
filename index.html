@@ -45,14 +45,25 @@
         @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
         .Ubuntu {font-family: 'Nunito Sans', sans-serif !important;}
         .toast-success{background-color:#51A351 !important;}
-    i.fas.fa-check {
-    background: #1266f1;
-    color: #fff;
-    padding: 4px;
-    border-radius: 100%;
-    font-size: 8px;
-    vertical-align: middle;
-}
+        /*-- scrollbar --*/
+        body :: ::-webkit-scrollbar {
+        width: 10px;
+        }
+        body ::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(to right bottom, #ffa400, #00aefd);
+        }
+        body ::-webkit-scrollbar-track {
+        background-color: #ccc;
+        border-radius: 100rem;
+        }
+        i.fas.fa-check {
+        background: #1266f1;
+        color: #fff;
+        padding: 4px;
+        border-radius: 100%;
+        font-size: 8px;
+        vertical-align: middle;
+        }
     </style>
 
 </head>
